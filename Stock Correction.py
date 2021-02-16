@@ -1,12 +1,12 @@
-pip install pyentrp
+#pip install pyentrp
 # !pip install nolds
-pip install git+https://github.com/manu-mannattil/nolitsa.git
-pip install saxpy
-pip install requests_html
-pip install fix_yahoo_finance --upgrade --no-cache-dir
+#pip install git+https://github.com/manu-mannattil/nolitsa.git
+#pip3 install saxpy
+#pip3 install requests_html
+#pip3 install fix_yahoo_finance --upgrade --no-cache-dir
 
 def data_creator(ticker):
-  import fix_yahoo_finance as yf 
+  import fix_yahoo_finance as yf
   from saxpy.znorm import znorm
   hist = yf.download(tickers = ticker, period = 'max')
   hist = hist["Close"]
